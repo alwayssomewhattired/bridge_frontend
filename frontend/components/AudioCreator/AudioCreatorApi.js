@@ -8,7 +8,7 @@ export const triggerBackend = async () => {
         method: "POST",
         headers: {
           "Content-type": "application/json",
-          "Access-Control-Allow-Origin": "*",
+          "Access-Control-Allow-Origin": "https://samplerinfinite.netlify.app",
         },
         body: JSON.stringify({ message: "User would like to start" }),
       }
