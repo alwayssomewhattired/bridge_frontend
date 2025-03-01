@@ -10,9 +10,10 @@ export const triggerBackend = async () => {
         // POST for deployment
         headers: {
           "Content-type": "application/json",
-          "Access-Control-Allow-Origin": "*",
-          "Access-Control-Allow-Methods": "OPTIONS, POST, GET",
-          "Access-Control-Allow-Headers": "Content-Type",
+          // "Access-Control-Allow-Origin": "*",
+          // "Access-Control-Allow-Methods": "OPTIONS, POST, GET",
+          // "Access-Control-Allow-Headers": "Content-Type",
+          // I don't think we need cors for deploying 
         },
         body: JSON.stringify({ message: "User would like to start" }), // body for POST deployment
       }
