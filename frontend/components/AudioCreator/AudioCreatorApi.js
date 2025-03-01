@@ -6,7 +6,7 @@ export const triggerBackend = async () => {
       "https://s1w15x1qoc.execute-api.us-east-2.amazonaws.com/test",
       {
         // This is for deployment
-        method: "POST",
+        method: "GET",
         headers: {
           "Content-type": "application/json",
           "Access-Control-Allow-Origin": "*",
