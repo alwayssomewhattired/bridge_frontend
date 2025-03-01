@@ -6,13 +6,13 @@ export const triggerBackend = async () => {
       "https://s1w15x1qoc.execute-api.us-east-2.amazonaws.com/test",
       {
         // This is for deployment
-        method: "GET",
+        method: "POST",
         // POST for deployment
         headers: {
           "Content-type": "application/json",
           // "Access-Control-Allow-Origin": "*",
         },
-        // body: JSON.stringify({ message: "User would like to start" }),        body for POST deployment
+        body: JSON.stringify({ message: "User would like to start" }), // body for POST deployment
       }
     );
     const data = await response.json();
