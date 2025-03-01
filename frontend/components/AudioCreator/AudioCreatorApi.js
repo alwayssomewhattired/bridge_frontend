@@ -11,6 +11,8 @@ export const triggerBackend = async () => {
         headers: {
           "Content-type": "application/json",
           "Access-Control-Allow-Origin": "*",
+          "Access-Control-Allow-Methods": "OPTIONS, POST, GET",
+          "Access-Control-Allow-Headers": "Content-Type",
         },
         body: JSON.stringify({ message: "User would like to start" }), // body for POST deployment
       }
