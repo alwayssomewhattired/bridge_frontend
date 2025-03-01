@@ -7,11 +7,12 @@ export const triggerBackend = async () => {
       {
         // This is for deployment
         method: "GET",
+        // POST for deployment
         headers: {
           "Content-type": "application/json",
           "Access-Control-Allow-Origin": "*",
         },
-        body: JSON.stringify({ message: "User would like to start" }),
+        // body: JSON.stringify({ message: "User would like to start" }),        body for POST deployment
       }
     );
     const data = await response.json();
